@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
+    "start:dev": "nodemon index.js",
+    "start": "node index.js",
     "build": "webpack --progress --colors --watch",
+    "build:prod": "webpack -p",    
     "styles": "lessc ./src/less-styles/index.less ./public/style/index.css",
     "styles:w": "less-watch-compiler src/less-styles public/style index.less"
   },
@@ -33,6 +35,10 @@
     "less": "^2.7.2",
     "less-watch": "^1.0.0",
     "less-watch-compiler": "^1.4.2",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "webpack": "^2.2.1"
+  },
+  "engines": {
+    "node": "7.2.0"
   }
 }
