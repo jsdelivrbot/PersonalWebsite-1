@@ -1,0 +1,48 @@
+.navbar {
+  display: block;
+  position: fixed;
+  top:0;
+  z-index: 1;
+  width: 100%;
+  min-height: 60px;
+  line-height: 60px;
+  background-color: @primary;
+  color: @text-white;
+  .z-depth();
+}
+
+.navbar-list {
+  display: inline;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar-list a {
+  display: block;
+  padding: 0 10px;
+  color: @text-white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar-list a:hover {
+  background-color: @primary-dark;
+}
+
+.navbar-item {
+  float: left;
+}
+
+.navbar-active {
+  background-color: @primary-dark;
+}
+
+.navbar-logo {
+  display: inline;
+  float: left;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 30px;
+}

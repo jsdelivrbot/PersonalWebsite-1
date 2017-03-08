@@ -1,0 +1,98 @@
+#resume {
+  overflow: auto;
+  text-align: center;
+  vertical-align: bottom;
+  background-color: @primary-dark;
+  height: 100vh;
+}
+
+#resume .container {
+  margin-top: 90px;
+  padding-bottom: 20px;
+}
+
+.resume-item {
+  box-sizing: border-box;
+  padding: 8px 12px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  color: @text-white;
+}
+
+.resume-item-box {
+  padding: 12px 4px;
+  background-color: @primary;
+  .z-depth();
+}
+
+.resume-item-box:hover {
+  cursor: pointer;
+}
+
+.resume-item-thumbnail {
+  width: 90%;
+  height: 186px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  .z-depth();
+}
+
+.resume-description {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding-bottom: 8px;
+  margin: 0;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  background-color: @primary-light;
+  .z-depth();
+}
+
+.resume-description-arrow {
+  @arrow-size: 10px;
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: @arrow-size solid transparent;
+  border-right: @arrow-size solid transparent;
+  border-bottom: @arrow-size solid @primary-light;
+}
+
+.resume-description-image-container {
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+
+.resume-description-image {
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  .z-depth();
+}
+.resume-description-image a {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-description-text {
+  box-sizing: border-box;
+  padding: 0 8px;
+  font-size: 18px;
+  text-align: left;
+  min-height: 200px;
+}
+
+.resume-description-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

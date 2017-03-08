@@ -1,0 +1,50 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.marginTop {
+  margin-top: 150px;
+}
+
+input {
+  border-radius: 2px;
+}
+
+#homePanel {
+  margin-top: 50px;
+  background-image: url("/images/landing-page-example-hero.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #222;
+  color: #EEE;
+  text-align: center;
+  text-shadow: 1px 1px #333;
+}
+
+#homePanel .textBackdrop {
+  padding: 25px 0 50px 0;
+  border-radius: 5px;
+  background-color: rgba(25, 25, 25, .7);
+
+}
+#emailInput {
+  border: 1px solid #DDD;
+  padding: 6px 12px;
+  border-radius: 2px;
+  vertical-align: bottom;
+}
+
+#aboutPanel {
+  background-color: #edcec4;
+}
+#downloadPanel {
+  background-color: #76b9e0;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
